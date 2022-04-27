@@ -50,7 +50,7 @@ blocks_table_ref = dataset_ref.table("blocks")
 # API request - fetch the table
 blocks_table = client.get_table(blocks_table_ref)
 
-# Preview the first five lines of the "transactions" table
+# Preview the first ten lines of the "transactions" table
 client.list_rows(blocks_table, max_results=10).to_dataframe()
 
 
@@ -75,7 +75,7 @@ num_of_trans_query_job = client.query(no_of_transactions_query, job_config=safe_
 # API request - run the query, and return a pandas DataFrame
 num_of_trans= num_of_trans_query_job.to_dataframe()
 
-# View top few rows of results
+# View the rows of results
 print(num_of_trans)
 
 
