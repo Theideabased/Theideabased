@@ -1,8 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# first i will try to import the crypto currency data using big query
-# 
+# first i will try to import the crypto currency data using big query 
 
 # In[3]:
 
