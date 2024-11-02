@@ -4,6 +4,9 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="13" value="User" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="570" y="20" width="400" height="690" as="geometry" />
+        </mxCell>
         <mxCell id="2" value="Home page" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="30" y="20" width="501" height="670" as="geometry" />
         </mxCell>
@@ -101,8 +104,58 @@
         <mxCell id="ZA41uXgh9-MmUPm3zsZT-66" value="generate and download the resume/cv in pdf /docs file and should be saved in database" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
           <mxGeometry x="27" y="604" width="293" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="13" value="User" style="whiteSpace=wrap;strokeWidth=2;verticalAlign=top;fontSize=20;" parent="1" vertex="1">
-          <mxGeometry x="570" y="20" width="400" height="541" as="geometry" />
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-78" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;" edge="1" source="ZA41uXgh9-MmUPm3zsZT-79" target="ZA41uXgh9-MmUPm3zsZT-80" parent="2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-79" value="Add Job title and company name in a written format like &quot;Airtable&quot;" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="2">
+          <mxGeometry x="665" y="313.84152542372885" width="162" height="53.429661016949154" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-80" value="Add Job description in textbox format" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="2">
+          <mxGeometry x="671.5" y="389.994406779661" width="149" height="45.42372881355932" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-82" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="750" y="437" as="sourcePoint" />
+            <mxPoint x="750" y="464" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-83" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="751.5" y="514" as="sourcePoint" />
+            <mxPoint x="751.5" y="541" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-84" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="751.5" y="591" as="sourcePoint" />
+            <mxPoint x="751.5" y="618" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-85" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="608" y="541" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-86" value="ask the user to select the want to use from the ones he created in the dashboard in pop-up list format" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+          <mxGeometry x="619" y="473.5" width="283" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-87" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="608" y="464" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-88" value="ask the user to select the template he wants to use, there are several templates in our database. THE TEMPLATE CAN BE PREVIEWED" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+          <mxGeometry x="608" y="548.5" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-89" value="generate and download the resume/cv in pdf /docs file and should be saved in database" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+          <mxGeometry x="615" y="628" width="293" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-90" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+          <mxGeometry x="608" y="618" width="310" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-91" value="ask the user to select the want to use from the ones he created in the dashboard in pop-up list format" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+          <mxGeometry x="612" y="471.5" width="283" height="27.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-92" value="generate and download the resume/cv in pdf /docs file and should be saved in database" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="2">
+          <mxGeometry x="611" y="628" width="293" height="30" as="geometry" />
         </mxCell>
         <mxCell id="ZA41uXgh9-MmUPm3zsZT-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ZA41uXgh9-MmUPm3zsZT-49">
           <mxGeometry relative="1" as="geometry">
@@ -118,6 +171,33 @@
             <mxPoint x="400" y="330" as="sourcePoint" />
             <mxPoint x="569" y="248" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-70" value="Create a new profile for a career path" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="690" y="91.84152542372883" width="167" height="53.429661016949154" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-72" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=0.99;entryX=0.5;entryY=-0.01;" edge="1" parent="1" source="ZA41uXgh9-MmUPm3zsZT-70">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="773.5" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-74" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="705.25" y="180" width="136.5" height="136.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-75" value="Create a Resume/CV under the profile created following the process below" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="723.5" y="230" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-81" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.452;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="773.9480000000001" y="317.04600000000005" as="sourcePoint" />
+            <mxPoint x="774" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-93" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="870" y="50" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ZA41uXgh9-MmUPm3zsZT-94" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;other functionalities of a dashboard should be included&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="875" y="75" width="70" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
