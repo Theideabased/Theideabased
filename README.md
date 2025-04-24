@@ -4,7 +4,6 @@
   <h1>Seyi Ogunmusire</h1>
   
   <p>
-    <a href="mailto:sogunmusire@gmail.com"><img src="https://img.shields.io/badge/Email-sogunmusire%40gmail.com-blue?style=flat-square&logo=gmail"></a>
     <a href="https://www.linkedin.com/in/ogunmusire-seyi"><img src="https://img.shields.io/badge/LinkedIn-ogunmusire--seyi-blue?style=flat-square&logo=linkedin"></a>
     <a href="https://github.com/Theideabased"><img src="https://img.shields.io/badge/GitHub-Theideabased-blue?style=flat-square&logo=github"></a>
     <a href="https://zindi.africa/users/Man_of_God"><img src="https://img.shields.io/badge/Zindi-Top%202%25%20Data%20Scientist-green?style=flat-square"></a>
