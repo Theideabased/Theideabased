@@ -1,0 +1,41 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Seyi Ogunmusire — AI systems, automation, marketing and data science</title>
+  <desc id="desc">A deep green editorial banner with a geometric system illustration.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101716"/>
+      <stop offset="1" stop-color="#18332B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="894" y1="72" x2="1118" y2="288" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D8F99B"/>
+      <stop offset="1" stop-color="#78C6A3"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" stroke="#F5F1E8" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="360" rx="24" fill="url(#background)"/>
+  <rect width="1200" height="360" rx="24" fill="url(#grid)"/>
+
+  <g opacity="0.98">
+    <rect x="70" y="58" width="50" height="8" rx="4" fill="#D8F99B"/>
+    <text x="70" y="127" fill="#F8F5EE" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="47" font-weight="700" letter-spacing="-1.5">Seyi Ogunmusire</text>
+    <text x="70" y="178" fill="#D9E2DD" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="400">I turn complex work into useful AI systems.</text>
+    <text x="70" y="233" fill="#D8F99B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600" letter-spacing="1.6">AI AGENTS  /  AUTOMATION  /  MARKETING  /  DATA</text>
+    <text x="70" y="294" fill="#9FB1A9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">Builder · Kaggle Datasets Expert · Based in Lagos, Nigeria</text>
+  </g>
+
+  <g>
+    <path d="M870 91L1010 49L1131 120L1108 265L968 309L847 236L870 91Z" fill="#13221E" stroke="#D8F99B" stroke-opacity="0.32" stroke-width="2"/>
+    <path d="M870 91L987 153L1131 120M987 153L968 309M987 153L1108 265M987 153L847 236" stroke="#D8F99B" stroke-opacity="0.32" stroke-width="2"/>
+    <circle cx="870" cy="91" r="11" fill="#D8F99B"/>
+    <circle cx="1010" cy="49" r="7" fill="#78C6A3"/>
+    <circle cx="1131" cy="120" r="9" fill="#F4C95D"/>
+    <circle cx="1108" cy="265" r="7" fill="#78C6A3"/>
+    <circle cx="968" cy="309" r="10" fill="#D8F99B"/>
+    <circle cx="847" cy="236" r="8" fill="#F4C95D"/>
+    <circle cx="987" cy="153" r="32" fill="url(#accent)"/>
+    <path d="M976 153L984 161L1000 143" stroke="#101716" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
