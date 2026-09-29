@@ -1,0 +1,10 @@
+node_modules/
+.next/
+.vercel/
+.brand-preview/
+*.log
+*.bak
+*.tsbuildinfo
+.DS_Store
+.env*
+!.env.example
