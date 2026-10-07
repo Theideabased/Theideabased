@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg" width="100%" alt="Seyi Ogunmusire — AI systems, automation, marketing and data science" />
+  <img src="./assets/profile-banner.svg" width="100%" alt="Seyi Ogunmusire — agentic AI systems, automation, and product engineering" />
 </div>
 
 <div align="center">
@@ -9,37 +9,38 @@
   <a href="https://www.linkedin.com/in/ogunmusire-seyi"><img src="https://img.shields.io/badge/Let's_connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect with me on LinkedIn" /></a>
 </div>
 
-## Hello — I’m Seyi 👋🏾
+## Hello — I’m Seyi, an agentic AI engineer 👋🏾
 
-I build practical systems that help people **find opportunities, work faster, sell more, and make better decisions**.
+I engineer AI agents that move from **reasoning to reliable action**.
 
-I’m a founder, product builder, and AI engineer working across artificial intelligence, business automation, marketing, and data science. My long-term focus is closing the gap between talent and opportunity—while helping useful businesses grow. I can move from understanding a real-world problem to designing the workflow, building the product, taking it to market, and measuring whether it actually works.
+My work spans autonomous coding agents, multi-agent research, agent-building infrastructure, prompt-to-video orchestration, AI-assisted products, and production data automation. I work across the full lifecycle: problem framing, control flow, tools, APIs, state, infrastructure, deployment, failure handling, and adoption.
 
-> I care less about technology that merely looks impressive and more about technology that makes someone’s day meaningfully easier.
+> A capable agent reasons. A production agent also knows when to act, retry, escalate, and stop.
 
 ### A few things I’m proud of
 
 | | |
 |---|---|
-| **MantaJobs in production** | Grew an AI-assisted career platform to 100+ active users and 20,000+ live job listings. |
 | **1st-place agent builder** | Won Nosana’s 2025 Agent 101 Challenge with MastraBolt, a no-code AI-agent platform. |
+| **Production coding agent** | Built core parts of an autonomous coding agent, model APIs, and authentication infrastructure at Elastic AI. |
+| **MantaJobs in production** | Grew an AI-assisted career platform to 100+ active users and 20,000+ live job listings. |
 | **₦500M fraud uncovered** | Helped an Ondo State audit team identify payroll fraud through data analysis. |
 | **Kaggle Datasets Expert** | Recognised for publishing useful datasets for the global data community. |
 | **Top 2% on Zindi** | Ranked among leading African data scientists on the competition platform. |
 
-## What I help people do
+## What I build
 
-### 🤖 Build AI agents that handle real work
+### 🤖 Agent architectures that handle real work
 
-I design AI-powered tools that can understand requests, use the right information, and complete multi-step tasks. That includes conversational products, coding assistants, intelligent document workflows, and the APIs behind them.
+I design systems that turn intent into coordinated action through planning, tool use, specialist delegation, stateful workflows, and clear human checkpoints. That includes coding agents, collaborative research, media-generation workflows, intelligent products, and the APIs behind them.
 
-### ⚙️ Automate repetitive business processes
+### ⚙️ Production infrastructure around the intelligence
 
-I turn manual, error-prone routines into dependable workflows—connecting data, decisions, and software so teams can spend more time on the work that needs human judgment.
+I connect agents to identity, data stores, external APIs, scheduled jobs, cloud deployment, and recovery controls so they can operate as dependable software—not isolated demos.
 
-### 📣 Turn good offers into clearer marketing
+### 🧭 Product judgment and adoption
 
-Through [Copiwrite](https://www.copiwrite.com), I help Nigerian businesses explain what they sell, reach the right people, and turn attention into enquiries and orders across websites, ads, social media, email, and WhatsApp.
+My product, growth, and sales experience helps me identify where an agent creates genuine value, design understandable user journeys, and learn from whether people actually trust and adopt the system.
 
 ### 📊 Find the story—and the risk—inside data
 

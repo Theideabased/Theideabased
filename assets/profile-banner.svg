@@ -1,5 +1,5 @@
 <svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">Seyi Ogunmusire — AI systems, automation, marketing and data science</title>
+  <title id="title">Seyi Ogunmusire — Senior Agentic AI Engineer</title>
   <desc id="desc">A deep green editorial banner with a geometric system illustration.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
@@ -21,9 +21,9 @@
   <g opacity="0.98">
     <rect x="70" y="58" width="50" height="8" rx="4" fill="#D8F99B"/>
     <text x="70" y="127" fill="#F8F5EE" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="47" font-weight="700" letter-spacing="-1.5">Seyi Ogunmusire</text>
-    <text x="70" y="178" fill="#D9E2DD" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="400">I turn complex work into useful AI systems.</text>
-    <text x="70" y="233" fill="#D8F99B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600" letter-spacing="1.6">AI AGENTS  /  AUTOMATION  /  MARKETING  /  DATA</text>
-    <text x="70" y="294" fill="#9FB1A9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">Founder &amp; Product Lead · AI Engineer · Kaggle Datasets Expert · Lagos</text>
+    <text x="70" y="178" fill="#D9E2DD" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="24" font-weight="400">I engineer AI agents that move from reasoning to reliable action.</text>
+    <text x="70" y="233" fill="#D8F99B" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="16" font-weight="600" letter-spacing="1.6">AGENT ARCHITECTURE  /  TOOL USE  /  ORCHESTRATION  /  PRODUCTION</text>
+    <text x="70" y="294" fill="#9FB1A9" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16">Agentic AI Engineer · Product Builder · Kaggle Datasets Expert · Lagos</text>
   </g>
 
   <g>

@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowDown, ArrowUpRight, Bot, BriefcaseBusiness, Check, ChevronRight, Database, Github, Globe2, Linkedin, Mail, Moon, Sparkles, Sun, TrendingUp } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Bot, BriefcaseBusiness, Check, ChevronRight, Github, Globe2, Linkedin, Mail, Moon, Sparkles, Sun, TrendingUp, Workflow } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { experience, lenses, LensKey, projects, proofPoints, recognition } from "@/lib/portfolio-data";
+import { capabilities, engineeringLoop, experience, lenses, LensKey, projects, proofPoints, recognition } from "@/lib/portfolio-data";
 
 /* ─────────────────────────────────────────────────────────
  * PAGE CONTENT STORYBOARD
@@ -17,7 +17,7 @@ import { experience, lenses, LensKey, projects, proofPoints, recognition } from 
 const TIMING = { label: 100, portrait: 250, proof: 420, annotation: 700 };
 const SPRING = { type: "spring" as const, stiffness: 300, damping: 30 };
 
-const iconMap = { briefcase: BriefcaseBusiness, bot: Bot, growth: TrendingUp, data: Database };
+const iconMap = { briefcase: BriefcaseBusiness, bot: Bot, growth: TrendingUp, workflow: Workflow };
 
 function SectionLabel({ index, children }: { index: string; children: React.ReactNode }) {
   return (
@@ -34,7 +34,7 @@ function ExternalArrow() {
 export function Portfolio() {
   const reduceMotion = useReducedMotion();
   const [stage, setStage] = useState(0);
-  const [lens, setLens] = useState<LensKey>("product");
+  const [lens, setLens] = useState<LensKey>("architecture");
   const [dark, setDark] = useState(true);
 
   useEffect(() => {
@@ -69,7 +69,7 @@ export function Portfolio() {
           </a>
           <div className="flex items-center gap-1 sm:gap-2">
             <a href="#work" className="hidden min-h-11 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors duration-100 hover:text-foreground md:flex">Work</a>
-            <a href="#approach" className="hidden min-h-11 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors duration-100 hover:text-foreground md:flex">How I think</a>
+            <a href="#architecture" className="hidden min-h-11 items-center rounded-md px-3 text-sm text-muted-foreground transition-colors duration-100 hover:text-foreground md:flex">Architecture</a>
             <button type="button" onClick={toggleTheme} className="grid size-11 place-items-center rounded-full text-muted-foreground transition-colors duration-100 hover:bg-muted hover:text-foreground" aria-label={dark ? "Switch to light theme" : "Switch to dark theme"}>
               {dark ? <Sun className="size-4" aria-hidden="true" /> : <Moon className="size-4" aria-hidden="true" />}
             </button>
@@ -84,13 +84,13 @@ export function Portfolio() {
           <div className="mx-auto grid min-h-[calc(100svh-7rem)] max-w-7xl items-center gap-16 px-5 pb-20 md:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20 lg:pb-24">
             <div className="max-w-4xl">
               <motion.p initial={reduceMotion ? false : { opacity: 0, y: -10 }} animate={{ opacity: visibleStage >= 1 ? 1 : 0, y: visibleStage >= 1 ? 0 : -10 }} transition={SPRING} className="mb-7 flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                <span className="size-2 rounded-full bg-primary" aria-hidden="true" /> Founder · AI engineer · growth operator
+                <span className="size-2 rounded-full bg-primary" aria-hidden="true" /> Senior agentic AI engineer · product builder
               </motion.p>
-              <h1 className="text-balance font-serif text-[clamp(3.6rem,9vw,8.8rem)] leading-[0.82] tracking-[-0.065em]">I don&apos;t fit neatly in a job title.<span className="mt-2 block text-primary">That&apos;s the point.</span></h1>
-              <p className="text-pretty mt-9 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">I connect AI engineering, automation, data, sales, and growth to turn difficult problems into useful products people understand—and adopt.</p>
+              <h1 className="text-balance font-serif text-[clamp(3.5rem,8.5vw,8.4rem)] leading-[0.84] tracking-[-0.065em]">I engineer AI agents that move from reasoning<span className="mt-2 block text-primary">to reliable action.</span></h1>
+              <p className="text-pretty mt-9 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">I design and ship agentic systems that plan, use tools, coordinate specialist agents, connect to real infrastructure, and produce outcomes people can trust.</p>
               <div className="mt-10 flex flex-wrap gap-3">
-                <a href="#work" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 font-semibold text-primary-foreground transition-transform duration-150 motion-safe:hover:scale-[1.03] active:scale-[0.97]">See what I&apos;ve built <ArrowDown className="size-4" aria-hidden="true" /></a>
-                <a href="https://www.mantajobs.com" target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-border bg-background/50 px-6 font-semibold transition-colors duration-100 hover:bg-muted">Visit MantaJobs <ExternalArrow /></a>
+                <a href="#work" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 font-semibold text-primary-foreground transition-transform duration-150 motion-safe:hover:scale-[1.03] active:scale-[0.97]">Explore agent systems <ArrowDown className="size-4" aria-hidden="true" /></a>
+                <a href="https://github.com/Theideabased" target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-border bg-background/50 px-6 font-semibold transition-colors duration-100 hover:bg-muted">View GitHub <ExternalArrow /></a>
               </div>
             </div>
             <motion.div initial={reduceMotion ? false : { opacity: 0, x: 24 }} animate={{ opacity: visibleStage >= 2 ? 1 : 0, x: visibleStage >= 2 ? 0 : 24 }} transition={SPRING} className="relative mx-auto w-full max-w-md lg:max-w-none">
@@ -98,8 +98,8 @@ export function Portfolio() {
                 <Image src="/images/seyi-ogunmusire-clear.webp" alt="Seyi Ogunmusire wearing traditional Nigerian attire" fill priority sizes="(max-width: 1024px) 448px, 38vw" className="portrait-image object-cover object-[center_18%]" />
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/20 to-transparent" aria-hidden="true" />
                 <motion.div initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: visibleStage >= 4 ? 1 : 0, y: visibleStage >= 4 ? 0 : 12 }} transition={SPRING} className="absolute inset-x-5 bottom-5 rounded-xl border border-border bg-background/88 p-4 backdrop-blur-lg">
-                  <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-primary">Current thesis</p>
-                  <p className="mt-2 text-sm leading-6">The strongest builders understand both the system and the person buying into it.</p>
+                  <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-primary">Engineering thesis</p>
+                  <p className="mt-2 text-sm leading-6">A capable agent reasons. A production agent also knows when to act, retry, escalate, and stop.</p>
                 </motion.div>
               </div>
               <div className="absolute -right-3 -top-3 grid size-16 place-items-center rounded-full border border-border bg-primary font-mono text-xs font-bold text-primary-foreground md:-right-6 md:-top-6" aria-hidden="true">LAG<br />OS</div>
@@ -118,35 +118,49 @@ export function Portfolio() {
 
         <section id="work" className="scroll-mt-24 px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl">
-            <SectionLabel index="01">Flagship case study</SectionLabel>
-            <div className="grid gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:items-end">
+            <SectionLabel index="01">Agentic engineering</SectionLabel>
+            <div className="grid gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
               <div>
-                <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">MantaJobs · Founder & Product Lead</p>
-                <h2 className="text-balance mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">A clearer path from job search to opportunity.</h2>
-                <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground">African professionals should not need twelve tabs, generic recommendations, and a spreadsheet to find their next role. MantaJobs brings discovery, matching, applications, and progress into one connected experience.</p>
-                <a href="https://www.mantajobs.com" target="_blank" rel="noreferrer" className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-md font-semibold text-primary underline decoration-primary/35 underline-offset-8 transition-colors duration-100 hover:text-foreground">Explore MantaJobs <ExternalArrow /></a>
+                <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">System thinking beyond the prompt</p>
+                <h2 className="text-balance mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">The model is one component. The workflow is the product.</h2>
+                <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground">I work across the full agent lifecycle: problem framing, orchestration, tool interfaces, state, backend services, deployment, failure handling, and the product experience surrounding the intelligence.</p>
+                <a href="#systems" className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-md font-semibold text-primary underline decoration-primary/35 underline-offset-8 transition-colors duration-100 hover:text-foreground">See shipped systems <ArrowDown className="size-4" aria-hidden="true" /></a>
               </div>
-              <div className="overflow-hidden rounded-2xl border border-border bg-card">
-                <Image src="/images/mantajobs-home.webp" alt="MantaJobs homepage showing its AI-assisted job search experience" width={1440} height={1100} sizes="(max-width: 1024px) 100vw, 58vw" className="h-auto w-full" />
+              <div className="agent-map rounded-2xl border border-border bg-card p-5 md:p-8" aria-label="Diagram of an agentic system moving from user intent through orchestration and tools to a verified outcome">
+                <div className="flex items-center justify-between border-b border-border pb-5">
+                  <div><p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">Agent runtime</p><p className="mt-1 text-sm text-muted-foreground">A production control loop</p></div>
+                  <span className="flex items-center gap-2 font-mono text-xs text-muted-foreground"><span className="size-2 rounded-full bg-primary" aria-hidden="true" /> observable</span>
+                </div>
+                <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                  {["01 · Intent + context", "02 · Plan + route", "03 · Tools + agents", "04 · Validate + respond"].map((step, index) => (
+                    <div key={step} className={`rounded-xl border p-4 ${index === 1 || index === 2 ? "border-primary/50 bg-primary/5" : "border-border bg-background"}`}>
+                      <p className="font-mono text-xs font-semibold text-primary">{step}</p>
+                      <p className="mt-3 text-sm leading-6 text-muted-foreground">{["Understand the goal, constraints, memory, and permission boundary.", "Choose the next action, delegate work, and persist state.", "Call APIs, retrieve data, run specialist agents, and handle failures.", "Check the result, request human input when needed, and close the loop."][index]}</p>
+                    </div>
+                  ))}
+                </div>
+                <div className="mt-3 flex flex-wrap gap-2 rounded-xl border border-border bg-background p-4 font-mono text-[0.72rem] text-muted-foreground">
+                  {["state", "tracing", "guardrails", "retries", "human review", "evaluation"].map((item) => <span key={item} className="rounded-full border border-border px-3 py-1.5">{item}</span>)}
+                </div>
               </div>
             </div>
             <div className="mt-12 grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-3">
               {[
-                { title: "The human problem", text: "Job searching is fragmented, repetitive, and hard to track—especially when relevance is unclear." },
-                { title: "The product system", text: "AI-assisted matching, job collection, application routing, tracking, subscriptions, lifecycle email, and a jobs API." },
-                { title: "The traction", text: "100+ active users and more than 20,000 live listings, with a résumé builder that can start from a LinkedIn profile." },
+                { title: "Agent architecture", text: "Planning, specialist delegation, tool selection, state management, and clear control boundaries." },
+                { title: "Production engineering", text: "APIs, identity, databases, cloud deployment, scheduled workflows, recovery paths, and integrations." },
+                { title: "Product judgment", text: "Human checkpoints, understandable outputs, measurable adoption, and business value beyond the demo." },
               ].map((item) => <article key={item.title} className="bg-card p-7 md:p-8"><h3 className="font-semibold">{item.title}</h3><p className="mt-3 text-sm leading-6 text-muted-foreground">{item.text}</p></article>)}
             </div>
           </div>
         </section>
 
-        <section id="approach" className="scroll-mt-24 border-y border-border bg-card/45 px-5 py-24 md:px-8 md:py-32">
+        <section id="architecture" className="scroll-mt-24 border-y border-border bg-card/45 px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl">
-            <SectionLabel index="02">One builder, four lenses</SectionLabel>
+            <SectionLabel index="02">Senior engineering lens</SectionLabel>
             <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
               <div>
-                <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">The work changes. The question does not.</h2>
-                <p className="mt-6 max-w-md leading-7 text-muted-foreground">What does the person need, what system will deliver it, and what will make the result grow?</p>
+                <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">I think across the whole system.</h2>
+                <p className="mt-6 max-w-md leading-7 text-muted-foreground">An agent succeeds when architecture, infrastructure, product judgment, and adoption reinforce one another.</p>
                 <div className="mt-9 grid grid-cols-2 gap-2" aria-label="Choose a perspective">
                   {(Object.keys(lenses) as LensKey[]).map((key) => {
                     const item = lenses[key]; const Icon = iconMap[item.icon]; const selected = lens === key;
@@ -173,12 +187,12 @@ export function Portfolio() {
           </div>
         </section>
 
-        <section className="px-5 py-24 md:px-8 md:py-32">
+        <section id="systems" className="scroll-mt-24 px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl">
             <SectionLabel index="03">Selected systems</SectionLabel>
             <div className="mb-12 grid gap-6 md:grid-cols-[1fr_0.65fr] md:items-end">
-              <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">Built across the whole journey.</h2>
-              <p className="text-lg leading-8 text-muted-foreground">Products, agents, pipelines, and growth systems—each designed around a real decision or repeated task.</p>
+              <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">Agents that do more than talk.</h2>
+              <p className="text-lg leading-8 text-muted-foreground">Agent infrastructure, autonomous coding, collaborative research, media generation, and production automation—built around work that must actually get done.</p>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
@@ -194,10 +208,46 @@ export function Portfolio() {
         </section>
 
         <section className="border-y border-border bg-card/45 px-5 py-24 md:px-8 md:py-32">
+          <div className="mx-auto max-w-7xl">
+            <SectionLabel index="04">How I build</SectionLabel>
+            <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr] lg:gap-20">
+              <div>
+                <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">A disciplined loop from ambiguity to production.</h2>
+                <p className="mt-6 max-w-md leading-7 text-muted-foreground">Senior agent engineering is equal parts architecture, software judgment, and curiosity about failure.</p>
+              </div>
+              <ol className="border-t border-border">
+                {engineeringLoop.map((item) => (
+                  <li key={item.number} className="grid gap-3 border-b border-border py-6 sm:grid-cols-[3rem_0.5fr_1fr] sm:gap-6">
+                    <span className="font-mono text-xs font-semibold text-primary">{item.number}</span>
+                    <h3 className="font-semibold">{item.title}</h3>
+                    <p className="text-sm leading-6 text-muted-foreground">{item.copy}</p>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            <div className="mt-24">
+              <div className="mb-10 grid gap-5 md:grid-cols-[1fr_0.7fr] md:items-end">
+                <h2 className="font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">The range to own the system.</h2>
+                <p className="leading-7 text-muted-foreground">Deep enough for the architecture. Broad enough to connect it to infrastructure, users, and measurable value.</p>
+              </div>
+              <div className="grid gap-px overflow-hidden rounded-2xl border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
+                {capabilities.map((capability) => (
+                  <article key={capability.label} className="bg-background p-7">
+                    <h3 className="font-mono text-xs font-semibold uppercase tracking-[0.13em] text-primary">{capability.label}</h3>
+                    <p className="mt-4 text-sm leading-6 text-muted-foreground">{capability.items}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto grid max-w-7xl gap-16 lg:grid-cols-2">
             <div>
-              <SectionLabel index="04">Experience</SectionLabel>
-              <h2 className="font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">The through-line is useful work.</h2>
+              <SectionLabel index="05">Experience</SectionLabel>
+              <h2 className="font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">Engineering shaped by shipped work.</h2>
               <div className="mt-12">
                 {experience.map((item) => (
                   <article key={`${item.role}-${item.place}`} className="grid gap-3 border-t border-border py-7 sm:grid-cols-[1fr_auto]">
@@ -208,7 +258,7 @@ export function Portfolio() {
               </div>
             </div>
             <div>
-              <SectionLabel index="05">Signals</SectionLabel>
+              <SectionLabel index="06">Signals</SectionLabel>
               <div className="rounded-2xl border border-border bg-background p-7 md:p-9">
                 <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">Proof beyond the portfolio</p>
                 <ul className="mt-7">
@@ -226,8 +276,8 @@ export function Portfolio() {
         <section className="px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-border bg-brand-accent p-8 text-primary-foreground md:p-14 lg:p-18">
             <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-              <div><div className="mb-8 flex items-center gap-3 font-mono text-xs font-bold uppercase tracking-[0.15em]"><Sparkles className="size-4" aria-hidden="true" /> What are we making useful?</div><h2 className="text-balance font-serif text-5xl leading-[0.92] tracking-[-0.05em] md:text-7xl">Bring me the difficult problem.</h2></div>
-              <div><p className="text-lg leading-8 opacity-80">If you are building an AI product, automating a business process, sharpening a growth system, or making data easier to act on, let&apos;s talk.</p><a href="mailto:ogunmusireseyi01@gmail.com?subject=Let%27s%20build%20something%20useful" className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-primary-foreground px-6 font-semibold text-foreground transition-transform duration-150 focus-visible:outline-primary-foreground motion-safe:hover:scale-[1.03] active:scale-[0.97]">Start a conversation <ChevronRight className="size-4" aria-hidden="true" /></a></div>
+              <div><div className="mb-8 flex items-center gap-3 font-mono text-xs font-bold uppercase tracking-[0.15em]"><Sparkles className="size-4" aria-hidden="true" /> Building a serious agentic system?</div><h2 className="text-balance font-serif text-5xl leading-[0.92] tracking-[-0.05em] md:text-7xl">Bring me the problem that resists a simple prompt.</h2></div>
+              <div><p className="text-lg leading-8 opacity-80">I am interested in senior agentic engineering work where architecture, tool use, reliability, product judgment, and real-world impact all matter.</p><a href="mailto:ogunmusireseyi01@gmail.com?subject=Senior%20Agentic%20AI%20Engineering%20Opportunity" className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-primary-foreground px-6 font-semibold text-foreground transition-transform duration-150 focus-visible:outline-primary-foreground motion-safe:hover:scale-[1.03] active:scale-[0.97]">Discuss a role <ChevronRight className="size-4" aria-hidden="true" /></a></div>
             </div>
           </div>
         </section>
