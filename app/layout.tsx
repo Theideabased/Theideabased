@@ -23,15 +23,16 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Seyi Ogunmusire — Senior Agentic AI Engineer",
+    default: "Seyi Ogunmusire — Software Engineer Building AI Solutions",
     template: "%s — Seyi Ogunmusire",
   },
   description:
-    "Senior agentic AI engineer building production agents, multi-agent workflows, autonomous tools, and the infrastructure that makes them reliable.",
+    "Software engineer building production AI solutions, agentic systems, APIs, automation, data pipelines, and products that solve real problems.",
   keywords: [
     "Seyi Ogunmusire",
-    "senior agentic AI engineer",
-    "AI agent engineer",
+    "software engineer",
+    "AI software engineer",
+    "AI solutions engineer",
     "multi-agent systems",
     "agent orchestration",
     "autonomous agents",
@@ -42,16 +43,16 @@ export const metadata: Metadata = {
   authors: [{ name: "Seyi Ogunmusire" }],
   openGraph: {
     type: "website",
-    title: "Seyi Ogunmusire — Senior Agentic AI Engineer",
+    title: "Seyi Ogunmusire — Software Engineer Building AI Solutions",
     description:
-      "I engineer AI agents that move from reasoning to reliable action.",
+      "I build software that turns AI into useful solutions.",
     siteName: "Seyi Ogunmusire",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Seyi Ogunmusire — Senior Agentic AI Engineer",
+    title: "Seyi Ogunmusire — Software Engineer Building AI Solutions",
     description:
-      "Production agents, multi-agent systems, tool orchestration, and AI product engineering.",
+      "Production AI products, agentic systems, APIs, automation, and data engineering.",
   },
 };
 

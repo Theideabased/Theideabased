@@ -1,6 +1,6 @@
 export const proofPoints = [
   { value: "#1", label: "Nosana Agent 101 Challenge" },
-  { value: "4+", label: "agentic systems shipped" },
+  { value: "4+", label: "AI systems shipped" },
   { value: "20,000+", label: "live jobs in an AI product" },
   { value: "Kaggle", label: "Datasets Expert" },
 ];
@@ -8,10 +8,10 @@ export const proofPoints = [
 export const lenses = {
   architecture: {
     label: "Architecture",
-    eyebrow: "From intent to coordinated action",
-    title: "I design agents as systems, not chat interfaces.",
-    body: "I break complex goals into plans, tools, specialist responsibilities, state transitions, and clear handoffs. The result is an agent that can act across a workflow—not simply generate an answer.",
-    proof: "Multi-agent research · autonomous coding · prompt-to-video orchestration",
+    eyebrow: "From intelligence to complete products",
+    title: "I design AI solutions as systems, not model demos.",
+    body: "I connect interfaces, application logic, models, tools, data, state, and clear human handoffs. The result is dependable software that solves a complete problem—not simply an impressive output.",
+    proof: "Full-stack AI products · autonomous coding · multi-agent workflows",
     icon: "bot",
   },
   production: {
@@ -44,12 +44,12 @@ export type LensKey = keyof typeof lenses;
 
 export const projects = [
   {
-    name: "MastraBolt",
-    type: "Agent development platform",
-    summary: "A browser-based environment for creating, testing, previewing, and deploying AI agents without writing code, with multiple model providers and one-click deployment paths.",
-    outcome: "1st place · Nosana Agent 101 Challenge",
-    tags: ["Agent infrastructure", "Multi-model", "Browser IDE", "Deployment"],
-    href: "https://nosana.com/blog/agent-101-recap-how-builders-took-on-the-nosana-challenge/",
+    name: "MantaJobs",
+    type: "Full-stack AI product",
+    summary: "A production career platform combining job aggregation, relevance matching, résumé generation, application workflows, lifecycle messaging, subscriptions, and an external jobs API.",
+    outcome: "100+ active users · 20,000+ live jobs",
+    tags: ["Next.js", "AI matching", "Data pipelines", "Product engineering"],
+    href: "https://www.mantajobs.com",
   },
   {
     name: "Elastic AI Coding Agent",
@@ -76,12 +76,12 @@ export const projects = [
     href: "https://github.com/Theideabased/agent-challenge",
   },
   {
-    name: "MantaJobs",
-    type: "AI-assisted career platform",
-    summary: "A production job platform combining scheduled data collection, relevance matching, application workflows, résumé generation, lifecycle messaging, and an external jobs API.",
-    outcome: "100+ active users · 20,000+ live jobs",
-    tags: ["AI matching", "Data pipelines", "Automation", "Product systems"],
-    href: "https://www.mantajobs.com",
+    name: "MastraBolt",
+    type: "Agent development platform",
+    summary: "A browser-based environment for creating, testing, previewing, and deploying AI agents without writing code, with multiple model providers and one-click deployment paths.",
+    outcome: "1st place · Nosana Agent 101 Challenge",
+    tags: ["Agent infrastructure", "Multi-model", "Browser IDE", "Deployment"],
+    href: "https://nosana.com/blog/agent-101-recap-how-builders-took-on-the-nosana-challenge/",
   },
   {
     name: "Business Email Data API",
@@ -111,7 +111,7 @@ export const capabilities = [
 ];
 
 export const experience = [
-  { role: "Founder & Agentic Product Engineer", place: "MantaJobs", period: "2024—now", copy: "Architecting an AI-assisted career platform, its data pipelines, automation, integrations, and product growth systems." },
+  { role: "Founder & Software Engineer", place: "MantaJobs", period: "2024—now", copy: "Building an AI-assisted career platform, its application architecture, data pipelines, automation, integrations, and growth systems." },
   { role: "Founding Software Engineer", place: "Elastic AI", period: "2025—2026", copy: "Built core parts of an autonomous coding agent, conversational model APIs, and authentication infrastructure." },
   { role: "AI Agent Builder", place: "Independent projects", period: "Ongoing", copy: "Shipping multi-agent research, agent-building infrastructure, media generation workflows, and production data automation." },
   { role: "Data Analyst", place: "Ondo State payroll audit", period: "Public impact", copy: "Used evidence-led analysis and automation to help uncover more than ₦500 million in payroll fraud." },

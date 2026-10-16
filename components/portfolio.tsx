@@ -84,12 +84,12 @@ export function Portfolio() {
           <div className="mx-auto grid min-h-[calc(100svh-7rem)] max-w-7xl items-center gap-16 px-5 pb-20 md:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20 lg:pb-24">
             <div className="max-w-4xl">
               <motion.p initial={reduceMotion ? false : { opacity: 0, y: -10 }} animate={{ opacity: visibleStage >= 1 ? 1 : 0, y: visibleStage >= 1 ? 0 : -10 }} transition={SPRING} className="mb-7 flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                <span className="size-2 rounded-full bg-primary" aria-hidden="true" /> Senior agentic AI engineer · product builder
+                <span className="size-2 rounded-full bg-primary" aria-hidden="true" /> Software engineer · AI solutions builder
               </motion.p>
-              <h1 className="text-balance font-serif text-[clamp(3.5rem,8.5vw,8.4rem)] leading-[0.84] tracking-[-0.065em]">I engineer AI agents that move from reasoning<span className="mt-2 block text-primary">to reliable action.</span></h1>
-              <p className="text-pretty mt-9 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">I design and ship agentic systems that plan, use tools, coordinate specialist agents, connect to real infrastructure, and produce outcomes people can trust.</p>
+              <h1 className="text-balance font-serif text-[clamp(3.5rem,8.5vw,8.4rem)] leading-[0.84] tracking-[-0.065em]">I build software that turns AI<span className="mt-2 block text-primary">into useful solutions.</span></h1>
+              <p className="text-pretty mt-9 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">I design and ship production software, AI products, agentic systems, APIs, data pipelines, and automation that solve real problems and create measurable value.</p>
               <div className="mt-10 flex flex-wrap gap-3">
-                <a href="#work" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 font-semibold text-primary-foreground transition-transform duration-150 motion-safe:hover:scale-[1.03] active:scale-[0.97]">Explore agent systems <ArrowDown className="size-4" aria-hidden="true" /></a>
+                <a href="#work" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 font-semibold text-primary-foreground transition-transform duration-150 motion-safe:hover:scale-[1.03] active:scale-[0.97]">Explore what I&apos;ve built <ArrowDown className="size-4" aria-hidden="true" /></a>
                 <a href="https://github.com/Theideabased" target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-border bg-background/50 px-6 font-semibold transition-colors duration-100 hover:bg-muted">View GitHub <ExternalArrow /></a>
               </div>
             </div>
@@ -99,7 +99,7 @@ export function Portfolio() {
                 <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/20 to-transparent" aria-hidden="true" />
                 <motion.div initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: visibleStage >= 4 ? 1 : 0, y: visibleStage >= 4 ? 0 : 12 }} transition={SPRING} className="absolute inset-x-5 bottom-5 rounded-xl border border-border bg-background/88 p-4 backdrop-blur-lg">
                   <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-primary">Engineering thesis</p>
-                  <p className="mt-2 text-sm leading-6">A capable agent reasons. A production agent also knows when to act, retry, escalate, and stop.</p>
+                  <p className="mt-2 text-sm leading-6">AI creates value when solid software turns intelligence into a dependable product people can use.</p>
                 </motion.div>
               </div>
               <div className="absolute -right-3 -top-3 grid size-16 place-items-center rounded-full border border-border bg-primary font-mono text-xs font-bold text-primary-foreground md:-right-6 md:-top-6" aria-hidden="true">LAG<br />OS</div>
@@ -118,12 +118,12 @@ export function Portfolio() {
 
         <section id="work" className="scroll-mt-24 px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl">
-            <SectionLabel index="01">Agentic engineering</SectionLabel>
+            <SectionLabel index="01">AI software engineering</SectionLabel>
             <div className="grid gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-center">
               <div>
-                <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">System thinking beyond the prompt</p>
-                <h2 className="text-balance mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">The model is one component. The workflow is the product.</h2>
-                <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground">I work across the full agent lifecycle: problem framing, orchestration, tool interfaces, state, backend services, deployment, failure handling, and the product experience surrounding the intelligence.</p>
+                <p className="font-mono text-xs font-semibold uppercase tracking-[0.14em] text-primary">Software thinking beyond the model</p>
+                <h2 className="text-balance mt-5 font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">The model is one component. The complete system is the solution.</h2>
+                <p className="mt-7 max-w-xl text-lg leading-8 text-muted-foreground">I work across the full product lifecycle: problem framing, application architecture, AI and agent workflows, APIs, data, authentication, deployment, failure handling, and the user experience around the technology.</p>
                 <a href="#systems" className="mt-8 inline-flex min-h-11 items-center gap-2 rounded-md font-semibold text-primary underline decoration-primary/35 underline-offset-8 transition-colors duration-100 hover:text-foreground">See shipped systems <ArrowDown className="size-4" aria-hidden="true" /></a>
               </div>
               <div className="agent-map rounded-2xl border border-border bg-card p-5 md:p-8" aria-label="Diagram of an agentic system moving from user intent through orchestration and tools to a verified outcome">
@@ -156,11 +156,11 @@ export function Portfolio() {
 
         <section id="architecture" className="scroll-mt-24 border-y border-border bg-card/45 px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl">
-            <SectionLabel index="02">Senior engineering lens</SectionLabel>
+            <SectionLabel index="02">Engineering perspective</SectionLabel>
             <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
               <div>
                 <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">I think across the whole system.</h2>
-                <p className="mt-6 max-w-md leading-7 text-muted-foreground">An agent succeeds when architecture, infrastructure, product judgment, and adoption reinforce one another.</p>
+                <p className="mt-6 max-w-md leading-7 text-muted-foreground">An AI solution succeeds when software architecture, infrastructure, intelligence, product judgment, and adoption reinforce one another.</p>
                 <div className="mt-9 grid grid-cols-2 gap-2" aria-label="Choose a perspective">
                   {(Object.keys(lenses) as LensKey[]).map((key) => {
                     const item = lenses[key]; const Icon = iconMap[item.icon]; const selected = lens === key;
@@ -191,8 +191,8 @@ export function Portfolio() {
           <div className="mx-auto max-w-7xl">
             <SectionLabel index="03">Selected systems</SectionLabel>
             <div className="mb-12 grid gap-6 md:grid-cols-[1fr_0.65fr] md:items-end">
-              <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">Agents that do more than talk.</h2>
-              <p className="text-lg leading-8 text-muted-foreground">Agent infrastructure, autonomous coding, collaborative research, media generation, and production automation—built around work that must actually get done.</p>
+              <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-7xl">Software that goes beyond the demo.</h2>
+              <p className="text-lg leading-8 text-muted-foreground">Full-stack AI products, autonomous coding, agent infrastructure, collaborative research, media generation, APIs, and production automation—built around work that must actually get done.</p>
             </div>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
               {projects.map((project, index) => (
@@ -213,7 +213,7 @@ export function Portfolio() {
             <div className="grid gap-8 lg:grid-cols-[0.65fr_1.35fr] lg:gap-20">
               <div>
                 <h2 className="text-balance font-serif text-5xl leading-[0.95] tracking-[-0.045em] md:text-6xl">A disciplined loop from ambiguity to production.</h2>
-                <p className="mt-6 max-w-md leading-7 text-muted-foreground">Senior agent engineering is equal parts architecture, software judgment, and curiosity about failure.</p>
+                <p className="mt-6 max-w-md leading-7 text-muted-foreground">Building dependable AI software is equal parts architecture, engineering judgment, and curiosity about failure.</p>
               </div>
               <ol className="border-t border-border">
                 {engineeringLoop.map((item) => (
@@ -276,8 +276,8 @@ export function Portfolio() {
         <section className="px-5 py-24 md:px-8 md:py-32">
           <div className="mx-auto max-w-7xl overflow-hidden rounded-3xl border border-border bg-brand-accent p-8 text-primary-foreground md:p-14 lg:p-18">
             <div className="grid gap-14 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
-              <div><div className="mb-8 flex items-center gap-3 font-mono text-xs font-bold uppercase tracking-[0.15em]"><Sparkles className="size-4" aria-hidden="true" /> Building a serious agentic system?</div><h2 className="text-balance font-serif text-5xl leading-[0.92] tracking-[-0.05em] md:text-7xl">Bring me the problem that resists a simple prompt.</h2></div>
-              <div><p className="text-lg leading-8 opacity-80">I am interested in senior agentic engineering work where architecture, tool use, reliability, product judgment, and real-world impact all matter.</p><a href="mailto:ogunmusireseyi01@gmail.com?subject=Senior%20Agentic%20AI%20Engineering%20Opportunity" className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-primary-foreground px-6 font-semibold text-foreground transition-transform duration-150 focus-visible:outline-primary-foreground motion-safe:hover:scale-[1.03] active:scale-[0.97]">Discuss a role <ChevronRight className="size-4" aria-hidden="true" /></a></div>
+              <div><div className="mb-8 flex items-center gap-3 font-mono text-xs font-bold uppercase tracking-[0.15em]"><Sparkles className="size-4" aria-hidden="true" /> Building a serious AI solution?</div><h2 className="text-balance font-serif text-5xl leading-[0.92] tracking-[-0.05em] md:text-7xl">Bring me the problem that needs more than a model.</h2></div>
+              <div><p className="text-lg leading-8 opacity-80">I am interested in software engineering work where AI, architecture, reliable infrastructure, product judgment, and real-world impact all matter.</p><a href="mailto:ogunmusireseyi01@gmail.com?subject=Software%20Engineering%20and%20AI%20Opportunity" className="mt-8 inline-flex min-h-12 items-center gap-2 rounded-full bg-primary-foreground px-6 font-semibold text-foreground transition-transform duration-150 focus-visible:outline-primary-foreground motion-safe:hover:scale-[1.03] active:scale-[0.97]">Discuss a role <ChevronRight className="size-4" aria-hidden="true" /></a></div>
             </div>
           </div>
         </section>

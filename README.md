@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./assets/profile-banner.svg" width="100%" alt="Seyi Ogunmusire — agentic AI systems, automation, and product engineering" />
+  <img src="./assets/profile-banner.svg" width="100%" alt="Seyi Ogunmusire — software engineer building AI solutions" />
 </div>
 
 <div align="center">
@@ -9,13 +9,13 @@
   <a href="https://www.linkedin.com/in/ogunmusire-seyi"><img src="https://img.shields.io/badge/Let's_connect-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Connect with me on LinkedIn" /></a>
 </div>
 
-## Hello — I’m Seyi, an agentic AI engineer 👋🏾
+## Hello — I’m Seyi, a software engineer building AI solutions 👋🏾
 
-I engineer AI agents that move from **reasoning to reliable action**.
+I build software that turns **AI into useful, dependable solutions**.
 
-My work spans autonomous coding agents, multi-agent research, agent-building infrastructure, prompt-to-video orchestration, AI-assisted products, and production data automation. I work across the full lifecycle: problem framing, control flow, tools, APIs, state, infrastructure, deployment, failure handling, and adoption.
+My work spans full-stack products, autonomous coding agents, multi-agent research, agent-building infrastructure, prompt-to-video orchestration, APIs, data pipelines, and production automation. I work across the full lifecycle: problem framing, application architecture, backend services, AI workflows, infrastructure, deployment, failure handling, and adoption.
 
-> A capable agent reasons. A production agent also knows when to act, retry, escalate, and stop.
+> The model is one component. The complete software system is what turns intelligence into value.
 
 ### A few things I’m proud of
 
