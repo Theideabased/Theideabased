@@ -75,7 +75,7 @@ Avoid “revolutionary,” “game-changing,” “cutting-edge,” “unlock,�
 
 ### Voice example
 
-> I build software that turns AI into useful solutions. The model is one component. The complete system creates the value.
+> I build software that makes AI useful. The model is one component. The complete system creates the value.
 
 ## Usage
 

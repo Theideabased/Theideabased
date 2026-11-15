@@ -11,7 +11,7 @@
 
 ## Hello — I’m Seyi, a software engineer building AI solutions 👋🏾
 
-I build software that turns **AI into useful, dependable solutions**.
+I build software that **makes AI useful**.
 
 My work spans full-stack products, autonomous coding agents, multi-agent research, agent-building infrastructure, prompt-to-video orchestration, APIs, data pipelines, and production automation. I work across the full lifecycle: problem framing, application architecture, backend services, AI workflows, infrastructure, deployment, failure handling, and adoption.
 

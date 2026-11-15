@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "Seyi Ogunmusire — Software Engineer Building AI Solutions",
     description:
-      "I build software that turns AI into useful solutions.",
+      "I build software that makes AI useful.",
     siteName: "Seyi Ogunmusire",
   },
   twitter: {

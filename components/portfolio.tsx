@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { InteractiveHero } from "./interactive-hero";
 import { ArrowDown, ArrowUpRight, Bot, BriefcaseBusiness, Check, ChevronRight, Github, Globe2, Linkedin, Mail, Moon, Sparkles, Sun, TrendingUp, Workflow } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -10,11 +11,10 @@ import { capabilities, engineeringLoop, experience, lenses, LensKey, projects, p
  * PAGE CONTENT STORYBOARD
  *    0ms   navigation and primary hero action are usable
  *  100ms   hero label settles into place
- *  250ms   portrait enters from the right
+ *  260ms   supporting copy settles
  *  420ms   proof points rise in sequence
- *  700ms   portrait annotation settles
  * ───────────────────────────────────────────────────────── */
-const TIMING = { label: 100, portrait: 250, proof: 420, annotation: 700 };
+const TIMING = { label: 100, support: 260, proof: 420 };
 const SPRING = { type: "spring" as const, stiffness: 300, damping: 30 };
 
 const iconMap = { briefcase: BriefcaseBusiness, bot: Bot, growth: TrendingUp, workflow: Workflow };
@@ -41,9 +41,8 @@ export function Portfolio() {
     if (reduceMotion) return;
     const timers = [
       window.setTimeout(() => setStage(1), TIMING.label),
-      window.setTimeout(() => setStage(2), TIMING.portrait),
+      window.setTimeout(() => setStage(2), TIMING.support),
       window.setTimeout(() => setStage(3), TIMING.proof),
-      window.setTimeout(() => setStage(4), TIMING.annotation),
     ];
     return () => timers.forEach(window.clearTimeout);
   }, [reduceMotion]);
@@ -56,15 +55,24 @@ export function Portfolio() {
 
   const activeLens = lenses[lens];
   const ActiveLensIcon = iconMap[activeLens.icon];
-  const visibleStage = reduceMotion ? 4 : stage;
+  const visibleStage = reduceMotion ? 3 : stage;
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-background text-foreground">
       <a href="#main-content" className="fixed left-4 top-4 z-[100] -translate-y-24 rounded-md bg-primary px-4 py-3 text-sm font-semibold text-primary-foreground focus:translate-y-0">Skip to content</a>
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/82 backdrop-blur-xl">
         <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 md:px-8" aria-label="Main navigation">
-          <a href="#top" className="flex min-h-11 items-center gap-3 rounded-md pr-2 font-semibold tracking-tight">
-            <span className="grid size-8 place-items-center rounded-full bg-primary font-mono text-xs font-bold text-primary-foreground">SO</span>
+          <a href="#top" className="group flex min-h-11 items-center gap-3 rounded-md pr-2 font-semibold tracking-tight" aria-label="Seyi Ogunmusire — back to top">
+            <motion.span
+              initial={reduceMotion ? false : { opacity: 0, scale: 0.8, rotate: -8 }}
+              animate={{ opacity: 1, scale: 1, rotate: 0 }}
+              whileHover={reduceMotion ? undefined : { scale: 1.06, rotate: -3 }}
+              transition={SPRING}
+              className="portrait-mark relative grid size-10 shrink-0 place-items-center rounded-full"
+            >
+              <Image src="/images/seyi-ogunmusire-clear.webp" alt="" width={40} height={40} priority className="portrait-mark-image size-10 rounded-full object-cover object-[center_18%]" />
+              <span className="absolute -bottom-0.5 -right-0.5 size-3 rounded-full border-2 border-background bg-primary" aria-hidden="true" />
+            </motion.span>
             <span className="hidden sm:inline">Seyi Ogunmusire</span>
           </a>
           <div className="flex items-center gap-1 sm:gap-2">
@@ -79,32 +87,8 @@ export function Portfolio() {
       </header>
 
       <main id="main-content">
-        <section id="top" className="relative isolate overflow-hidden bg-brand-bg pt-28 md:pt-36">
-          <div className="noise-field pointer-events-none absolute inset-0 -z-10" aria-hidden="true" />
-          <div className="mx-auto grid min-h-[calc(100svh-7rem)] max-w-7xl items-center gap-16 px-5 pb-20 md:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-20 lg:pb-24">
-            <div className="max-w-4xl">
-              <motion.p initial={reduceMotion ? false : { opacity: 0, y: -10 }} animate={{ opacity: visibleStage >= 1 ? 1 : 0, y: visibleStage >= 1 ? 0 : -10 }} transition={SPRING} className="mb-7 flex items-center gap-3 font-mono text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
-                <span className="size-2 rounded-full bg-primary" aria-hidden="true" /> Software engineer · AI solutions builder
-              </motion.p>
-              <h1 className="text-balance font-serif text-[clamp(3.5rem,8.5vw,8.4rem)] leading-[0.84] tracking-[-0.065em]">I build software that turns AI<span className="mt-2 block text-primary">into useful solutions.</span></h1>
-              <p className="text-pretty mt-9 max-w-2xl text-lg leading-8 text-muted-foreground md:text-xl">I design and ship production software, AI products, agentic systems, APIs, data pipelines, and automation that solve real problems and create measurable value.</p>
-              <div className="mt-10 flex flex-wrap gap-3">
-                <a href="#work" className="inline-flex min-h-12 items-center gap-2 rounded-full bg-primary px-6 font-semibold text-primary-foreground transition-transform duration-150 motion-safe:hover:scale-[1.03] active:scale-[0.97]">Explore what I&apos;ve built <ArrowDown className="size-4" aria-hidden="true" /></a>
-                <a href="https://github.com/Theideabased" target="_blank" rel="noreferrer" className="inline-flex min-h-12 items-center gap-2 rounded-full border border-border bg-background/50 px-6 font-semibold transition-colors duration-100 hover:bg-muted">View GitHub <ExternalArrow /></a>
-              </div>
-            </div>
-            <motion.div initial={reduceMotion ? false : { opacity: 0, x: 24 }} animate={{ opacity: visibleStage >= 2 ? 1 : 0, x: visibleStage >= 2 ? 0 : 24 }} transition={SPRING} className="relative mx-auto w-full max-w-md lg:max-w-none">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[1.5rem] border border-border bg-card">
-                <Image src="/images/seyi-ogunmusire-clear.webp" alt="Seyi Ogunmusire wearing traditional Nigerian attire" fill priority sizes="(max-width: 1024px) 448px, 38vw" className="portrait-image object-cover object-[center_18%]" />
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-background via-background/20 to-transparent" aria-hidden="true" />
-                <motion.div initial={reduceMotion ? false : { opacity: 0, y: 12 }} animate={{ opacity: visibleStage >= 4 ? 1 : 0, y: visibleStage >= 4 ? 0 : 12 }} transition={SPRING} className="absolute inset-x-5 bottom-5 rounded-xl border border-border bg-background/88 p-4 backdrop-blur-lg">
-                  <p className="font-mono text-[0.68rem] font-semibold uppercase tracking-[0.14em] text-primary">Engineering thesis</p>
-                  <p className="mt-2 text-sm leading-6">AI creates value when solid software turns intelligence into a dependable product people can use.</p>
-                </motion.div>
-              </div>
-              <div className="absolute -right-3 -top-3 grid size-16 place-items-center rounded-full border border-border bg-primary font-mono text-xs font-bold text-primary-foreground md:-right-6 md:-top-6" aria-hidden="true">LAG<br />OS</div>
-            </motion.div>
-          </div>
+        <section id="top" className="relative isolate overflow-hidden bg-background pt-24">
+          <InteractiveHero />
           <div className="border-y border-border bg-background/65 backdrop-blur-sm">
             <div className="mx-auto grid max-w-7xl grid-cols-2 px-5 md:px-8 lg:grid-cols-4">
               {proofPoints.map((item, index) => (
